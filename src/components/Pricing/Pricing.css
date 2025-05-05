@@ -1,0 +1,132 @@
+.pricing {
+    padding: 6rem 2rem;
+    background-color: white;
+  }
+  
+  .pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .plan-card {
+    background: #f9fafc;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .plan-card.popular {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(110, 142, 251, 0.3);
+  }
+  
+  .popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #ff4757;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-price {
+    margin-bottom: 1.5rem;
+  }
+  
+  .price {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  .period {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .plan-card.popular .period {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .plan-features li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .plan-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #6e8efb;
+  }
+  
+  .plan-card.popular .plan-features li:before {
+    color: white;
+  }
+  
+  .plan-button {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .primary-button {
+    background: white;
+    color: #6e8efb;
+    border: none;
+  }
+  
+  .primary-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .secondary-button {
+    background: transparent;
+    border: 2px solid #6e8efb;
+    color: #6e8efb;
+  }
+  
+  .secondary-button:hover {
+    background: rgba(110, 142, 251, 0.1);
+  }
+  
+  .plan-card.popular .secondary-button {
+    border-color: white;
+    color: white;
+  }
+  
+  .plan-card.popular .secondary-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }

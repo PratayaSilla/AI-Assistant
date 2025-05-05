@@ -1,0 +1,67 @@
+.showcase {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  }
+  
+  .showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .example-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .example-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .example-preview {
+    height: 200px;
+    position: relative;
+  }
+  
+  .example-preview.image {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  }
+  
+  .example-preview.video {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #6e8efb;
+  }
+  
+  .example-prompt {
+    padding: 1.5rem;
+  }
+  
+  .example-prompt p {
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+  }

@@ -1,0 +1,123 @@
+.hero {
+  padding: 8rem 2rem 6rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  min-height: calc(100vh - 80px); /* Adjust 80px to your navbar height */
+  display: flex;
+  align-items: center;
+}
+.hero {
+    padding: 8rem 2rem 6rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  }
+  
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #333, #666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-button, .secondary-button {
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .primary-button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+  }
+  
+  .primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(110, 142, 251, 0.3);
+  }
+  
+  .secondary-button {
+    background: transparent;
+    border: 2px solid #6e8efb;
+    color: #6e8efb;
+  }
+  
+  .secondary-button:hover {
+    background: rgba(110, 142, 251, 0.1);
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+  
+  .ai-preview {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(-10deg);
+    transition: transform 0.5s;
+  }
+  
+  .ai-preview:hover {
+    transform: perspective(1000px) rotateY(-5deg);
+  }
+  
+  .prompt-box {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .generated-image {
+    height: 300px;
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    .hero-image {
+      margin-top: 3rem;
+    }
+  }
