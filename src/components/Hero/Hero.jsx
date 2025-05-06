@@ -20,7 +20,9 @@ const Hero = () => {
             <div className="prompt-box">
               <p>"A futuristic city at sunset, cyberpunk style, 4k ultra HD"</p>
             </div>
-            <div className="generated-image"></div>
+            <div className="generated-image">
+              <img src="./AI gen img-hero.jpeg" alt="" />
+            </div>
           </div>
         </div>
       </div>

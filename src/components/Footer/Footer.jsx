@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-main">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="logo-text">AI</span>Creatives
+              <span className="logo-text">Progenix</span>AI
             </div>
             <p className="footer-description">
               Transforming ideas into visuals with cutting-edge AI technology.
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p className="copyright">© 2023 AICreatives. All rights reserved.</p>
+          <p className="copyright">© 2023 Progenix AI. All rights reserved.</p>
           <div className="social-links">
             <a href="#" aria-label="Twitter">🐦</a>
             <a href="#" aria-label="Instagram">📷</a>

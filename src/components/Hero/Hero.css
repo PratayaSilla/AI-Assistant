@@ -73,6 +73,7 @@
   }
   
   .hero-image {
+    width: 35rem;
     position: relative;
   }
   
@@ -99,12 +100,17 @@
   
   .generated-image {
     height: 300px;
-    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    width: 100%;
+    /* background: linear-gradient(135deg, #a777e3, #6e8efb); */
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     color: white;
     font-weight: 600;
+  }
+  .generated-image img {
+    height: 300px;
+    width: 1050px;
   }
   
   @media (max-width: 768px) {
