@@ -1,0 +1,195 @@
+.neo-signup-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #FFFBEB;
+  }
+  
+  .neo-signup-graphic {
+    width: 50%;
+    background-color: #B782FC;
+    background-image: 
+      radial-gradient(circle at 25% 60%, rgba(255,255,255,0.2) 0%, transparent 40%),
+      linear-gradient(to right, #B782FC, #9A5FFB);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .neo-signup-graphic::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #FFD166;
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    opacity: 0.3;
+  }
+  
+  .neo-signup-graphic::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #06D6A0;
+    border-radius: 50%;
+    bottom: -30px;
+    left: -30px;
+    opacity: 0.2;
+  }
+  
+
+  .neo-signup-form {
+    width: 50%;
+    padding: 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .neo-signup-title {
+    font-family: 'clash-display', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+  }
+  
+  .neo-signup-title span {
+    color: #B782FC;
+    /* -webkit-text-stroke: 2px #000;
+    text-stroke: 2px #000; */
+  }
+  
+  .neo-signup-subtitle {
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+  }
+  
+
+  .neo-input-group {
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  
+  .neo-input {
+    width: 100%;
+    padding: 1rem 0;
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #000;
+    outline: none;
+  }
+  
+  .neo-input:focus {
+    border-bottom-color: #B782FC;
+  }
+  
+  .neo-input-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #B782FC;
+    transition: width 0.3s ease;
+  }
+  
+  .neo-input:focus ~ .neo-input-underline {
+    width: 100%;
+  }
+  
+
+  .neo-signup-button {
+    font-family: 'clash-display', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1.2rem 2rem;
+    border: 4px solid #000;
+    background-color: #FFD166;
+    cursor: pointer;
+    box-shadow: 6px 6px 0 #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .neo-signup-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0 #000;
+  }
+  
+  .neo-signup-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 #000;
+  }
+  
+  .neo-arrow {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  
+
+  .neo-signup-login {
+    font-family: 'clash-display', sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    color: #000;
+  }
+  
+  .neo-link {
+    color: #B782FC;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .neo-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #B782FC;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .neo-signup-form {
+      padding: 4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .neo-signup-container {
+      flex-direction: column;
+    }
+    
+    .neo-signup-graphic {
+      width: 100%;
+      height: 200px;
+    }
+    
+    .neo-signup-form {
+      width: 100%;
+      padding: 4rem 2rem;
+    }
+    
+    .neo-signup-title {
+      font-size: 2.5rem;
+    }
+  }
